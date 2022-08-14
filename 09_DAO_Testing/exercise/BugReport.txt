@@ -1,0 +1,43 @@
+Bug 1
+-----
+Test that demonstrates problem: getTimesheetsByEmployeeId
+
+Expected output:returns 3 timesheets
+
+Actual output:returned 2 timesheets
+
+How did you fix this bug? i changed the employee ID While loop
+
+
+Bug 2
+-----
+Test that demonstrates problem: getTimesheetsByProjectId
+
+Expected output: 3 timesheets expected from the process of calling projectId
+
+Actual output: 0 timesheets returned
+
+How did you fix this bug? I saw that there was a typo in the sequel string that the WHERE was asking for employee_id instead of project_id
+
+
+Bug 3
+-----
+Test that demonstrates problem: updated_timesheet_has_expected_values_when_retrieved()
+
+Expected output: timesheet 1 updated
+
+Actual output: ERROR because all attributes not listed
+
+How did you fix this bug?
+i inserted billable into the sql statement and to the jdbc template.
+
+Bug 4
+-----
+Test that demonstrates problem: getBillableHours_returns_correct_total
+
+Expected output: billable hours returns correct
+
+Actual output: billable output results are not put into mapRowtoTimesheets
+
+How did you fix this bug?
+add results to mapRowtoTimesheets.
